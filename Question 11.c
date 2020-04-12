@@ -22,10 +22,10 @@ main()
 	pthread_t write1;  
   	
 	pthread_create(&read, NULL, reader, (void *)a);  
-    a++;  
+    	a++;  
   	
 	pthread_create(&write1, NULL, writer, (void *)b);  
-    b++;  
+    	b++;  
 	
 	pthread_create(&read1, NULL, reader, (void *)a);  
 	pthread_create(&write, NULL, writer, (void *)b);  
